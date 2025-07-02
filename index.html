@@ -1,5 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water Landing Page</title>
+  <style>
+    /* Reset & Base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Proxima Nova', Arial, sans-serif; color: #333; }
+
+    /* Hero Section */
+    .hero { display: flex; min-height: 100vh; }
+
+    /* Left Column */
+    .content {
+      flex: 1;
+      background-color: #FEF5E2;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .logo { width: 160px; margin-bottom: 40px; }
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    p { font-size: 1.125rem; line-height: 1.6; margin-bottom: 16px; }
+    .subtext { margin-top: 8px; font-weight: 600; }
+
+    /* Donate Form */
+    .donate-form { display: flex; margin-top: 24px; max-width: 400px; }
+    .donate-form input {
+      flex: 1;
+      padding: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      font-size: 1rem;
+    }
+    .donate-form button {
+      padding: 16px 32px;
+      background-color: #FFC700;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* Right Column */
+    .image { flex: 1; }
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; }
+      .image, .content { flex: none; height: 50vh; }
+      .content { padding: 32px; }
+    }
+  </style>
+</head>
 <body>
-    <p>
-        Hello, World!
-    </p>
+  <section class="hero">
+    <div class="content">
+      <!-- Replace 'logo.png' with your Charity: Water logo -->
+      <img src="logo.png" alt="Charity: Water Supporter Logo" class="logo" />
+      <h1>Fuel Clean Water Projects<br>That Change Lives</h1>
+      <p>charity: water uses every dollar to fund clean drinking water projects that change lives. Donate now to make a real impact.</p>
+      <p class="subtext">Even one dollar creates change</p>
+
+      <form class="donate-form">
+        <input type="number" name="amount" placeholder="5, 10, 20..." min="1" required />
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+
+    <div class="image">
+      <!-- Replace 'water-project.jpg' with your actual image -->
+      <img src="water-project.jpg" alt="Child collecting clean water" />
+    </div>
+  </section>
 </body>
+</html>
