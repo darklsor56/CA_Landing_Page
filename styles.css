@@ -3,24 +3,29 @@
 body { font-family: 'Proxima Nova', Arial, sans-serif; color: #333; text-align: center; }
 
 /* Hero Section */
-.hero { display: flex; min-height: 100vh; }
+.hero {
+    display: flex;
+    min-height: 100vh;
+}
 
-/* Left Column */
-.content {
-  flex: 1;
-  background-color: #FEF5E2;
-  padding: 60px;
+.left-column {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
-}
-.logo {
-    width: 20%;
-    max-width: 300px;
+  background-color: #FEF5E2;
 }
 
-@media (min-width: 768px) {
-  .logo { width: 15%; }
+.logo {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -28,8 +33,24 @@ h1 {
   line-height: 1.2;
   margin-bottom: 24px;
 }
-p { font-size: 1.125rem; line-height: 1.6; margin-bottom: 16px; }
-.subtext { margin-top: 8px; font-weight: 600; }
+
+p.header {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin: 20px 0;
+    color: black;
+    font-family: 'Tinos';
+}
+
+p.subheader {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+p.moto {
+    margin-top: 8px;
+    font-weight: 600;
+}
 
 /* Donate Form */
 .donate-form { display: flex; margin-top: 24px; max-width: 400px; }
