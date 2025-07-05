@@ -14,7 +14,15 @@ body { font-family: 'Proxima Nova', Arial, sans-serif; color: #333; text-align: 
   flex-direction: column;
   justify-content: center;
 }
-.logo { width: 160px; margin-bottom: 40px; }
+.logo {
+    width: 20%;
+    max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .logo { width: 15%; }
+}
+
 h1 {
   font-size: 3rem;
   line-height: 1.2;
