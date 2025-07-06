@@ -97,3 +97,12 @@ p.moto {
   .image, .content { flex: none; height: 50vh; }
   .content { padding: 32px; }
 }
+
+.thankyou-page {
+  min-height: 100vh;
+  background-color: #FEF5E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
