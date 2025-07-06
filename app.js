@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      const amount = amountInput.value;
-      if (amount && parseFloat(amount) > 0) {
+      const amount = parseFloat(amountInput.value).toFixed(2);
+
+      if (!isNaN(amount) && amount >= 1.00) {
         window.location.href = 'thankyou.html';
       } else {
-        alert('Please enter a valid donation amount.');
+        alert('Please enter a valid donation of at least $1.00');
       }
     });
   }
