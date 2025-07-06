@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity: Water Landing Page</title>
   <link rel="stylesheet" href="styles.css"/>
+  <script src="app.js"></script>
 </head>
 <body>
   <section class="hero">
@@ -19,10 +20,11 @@
         <p class="subheader">charity: water uses every dollar to fund clean drinking water projects that change lives. Donate now to make a real impact.</p>
         <p class="moto">Even one dollar creates change</p>
 
-        <form class="donate-form">
-          <input type="number" name="amount" placeholder="5, 10, 20..." min="1" required />
+        <form class="donate-form" id="donateForm">
+          <input type="number" name="amount" id="donationAmount" placeholder="5, 10, 20..." min="1" required />
           <button type="submit">Donate</button>
         </form>
+        
       </div>
 
     </div>

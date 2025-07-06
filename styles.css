@@ -1,6 +1,11 @@
 /* Reset & Base */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Proxima Nova', Arial, sans-serif; color: #333; text-align: center; }
+body {
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  background-color: #FEF5E2;
+}
 
 /* Hero Section */
 .hero {
